@@ -1,0 +1,75 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20240205093221
+Username: SURESHNANJAN\nanja
+RunAs User: SURESHNANJAN\nanja
+Configuration Name: 
+Machine: SURESHNANJAN (Microsoft Windows NT 10.0.22621.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 36644
+PSVersion: 5.1.22621.2506
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.2506
+BuildVersion: 10.0.22621.2506
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is instructions.log
+PS C:\Trainings-2021\Vendors\IIHT\Hexaware> node -v
+v20.11.0
+PS C:\Trainings-2021\Vendors\IIHT\Hexaware> npm -v
+10.4.0
+PS C:\Trainings-2021\Vendors\IIHT\Hexaware> New-Item -Name hexaware-pw-wdio -Type Directory
+
+
+    Directory: C:\Trainings-2021\Vendors\IIHT\Hexaware
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        05-02-2024     09:36                hexaware-pw-wdio
+
+
+PS C:\Trainings-2021\Vendors\IIHT\Hexaware> sl .\hexaware-pw-wdio\
+PS C:\Trainings-2021\Vendors\IIHT\Hexaware\hexaware-pw-wdio> npm init playwright@latest
+  npx playwright test --project=chromium
+    Runs the tests only on Desktop Chrome.
+
+  npx playwright test example
+    Runs the tests in a specific file.
+
+  npx playwright test --debug
+    Runs the tests in debug mode.
+
+  npx playwright codegen
+    Auto generate tests with Codegen.
+
+We suggest that you begin by typing:
+
+    npx playwright test
+
+And check out the following files:
+  - .\scenarios\example.spec.ts - Example end-to-end test
+  - .\tests-examples\demo-todo-app.spec.ts - Demo Todo App end-to-end tests
+  - .\playwright.config.ts - Playwright Test configuration
+
+Visit https://playwright.dev/docs/intro for more information. ✨✨
+
+Happy hacking! ��
+PS C:\Trainings-2021\Vendors\IIHT\Hexaware\hexaware-pw-wdio> npm playwright -v
+
+PS C:\Trainings-2021\Vendors\IIHT\Hexaware\hexaware-pw-wdio> npx playwright test
+
+PS C:\Trainings-2021\Vendors\IIHT\Hexaware\hexaware-pw-wdio> npx playwright show-report
+
+PS C:\Trainings-2021\Vendors\IIHT\Hexaware\hexaware-pw-wdio> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+PS C:\Trainings-2021\Vendors\IIHT\Hexaware\hexaware-pw-wdio> code .
+
+PS C:\Trainings-2021\Vendors\IIHT\Hexaware\hexaware-pw-wdio> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20240205104034
+**********************
