@@ -1,0 +1,20 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20240206122431
+Username: DESKTOP-019QE16\Divin
+RunAs User: DESKTOP-019QE16\Divin
+Configuration Name: 
+Machine: DESKTOP-019QE16 (Microsoft Windows NT 10.0.22621.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -noexit -command try { . "c:\Users\Divin\AppData\Local\Programs\Microsoft VS Code\resources\app\out\vs\workbench\contrib\terminal\browser\media\shellIntegration.ps1" } catch {}
+Process ID: 34756
+PSVersion: 5.1.22621.2506
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.2506
+BuildVersion: 10.0.22621.2506
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is Vishnu.log
+]633;E;Start-Transcript Vishnu.log;4958ecf8-54d0-4d79-945c-90b22b85c9be]633;D;0]633;A]633;P;Cwd=C:\x5cworkspace\x5cPlaywright\x5cFeb06\x5chexaware-pw-wdioPS C:\workspace\Playwright\Feb06\hexaware-pw-wdio> ]633;B
