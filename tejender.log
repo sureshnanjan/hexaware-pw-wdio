@@ -1,0 +1,40 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20240205120221
+Username: EURO\tthakur
+RunAs User: EURO\tthakur
+Configuration Name: 
+Machine: FTIAJWUR3FEFI1F (Microsoft Windows NT 10.0.22621.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 15304
+PSVersion: 5.1.22621.2506
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.2506
+BuildVersion: 10.0.22621.2506
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is tejender.log
+PS C:\Users\tthakur\automation-pl-wdio> npm init playwright@latest
+
+PS C:\Users\tthakur\automation-pl-wdio> npx playwright test
+
+PS C:\Users\tthakur\automation-pl-wdio> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+PS C:\Users\tthakur\automation-pl-wdio> npx playwright install
+
+PS C:\Users\tthakur\automation-pl-wdio> npx playwright test
+
+PS C:\Users\tthakur\automation-pl-wdio> npx playwright show-report
+
+PS C:\Users\tthakur\automation-pl-wdio> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+PS C:\Users\tthakur\automation-pl-wdio> code .
+
+PS C:\Users\tthakur\automation-pl-wdio> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20240205122607
+**********************
