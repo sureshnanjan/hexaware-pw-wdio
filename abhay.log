@@ -1,0 +1,32 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20240206121716
+Username: CORP\2000096498
+RunAs User: CORP\2000096498
+Configuration Name: 
+Machine: LTPU-5CD1184CPJ (Microsoft Windows NT 10.0.22621.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 24140
+PSVersion: 5.1.22621.1778
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.1778
+BuildVersion: 10.0.22621.1778
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is abhay.log
+PS C:\Users\2000096498> npm init playwright@latest
+Need to install the following packages:
+  create-playwright@1.17.131
+Ok to proceed? (y) n
+npm ERR! canceled
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\2000096498\AppData\Local\npm-cache\_logs\2024-02-06T06_47_53_457Z-debug-0.log
+PS C:\Users\2000096498> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20240206121806
+**********************
