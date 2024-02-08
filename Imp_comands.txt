@@ -1,0 +1,17 @@
+New-Item -Name automation-pl-wdio -Type Directory
+Start-Transcript -Path sushil.log
+cd .\automation-pl-wdio\
+start
+dir
+npm init playwright@latest
+npm install -g npm@10.4.0
+npx playwright test
+npx playwright show-report
+
+--------------------------------------
+npm i --save-dev @types/node 
+git config user.email "panditsush49@gmail.com"
+git config user.name "panditsush49@gmail.com"
+-----------------------------------------------------
+https://github.com/sureshnanjan/hexaware-pw-wdio/tree/suresh-trainer 
+
