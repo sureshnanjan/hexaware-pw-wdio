@@ -3,9 +3,13 @@ import { add_remove_actions } from "../operations/add_remove-operations";
 import { heroku_home_page } from "../pw-impl/heroku_home_page";
 import { test, expect } from '@playwright/test';
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { HerokuAppPages } from "../operations/heroku_app_type";
 =======
 >>>>>>> 922fa11 (update all scenarios)
+=======
+import { HerokuAppPages } from "../operations/heroku_app_type";
+>>>>>>> c666585 (update with suresh changes)
 
 function getLanguageString()
 {
@@ -22,10 +26,14 @@ test.beforeEach(async ({ page }, testInfo) => {
   });
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 test.skip("Home Page Title", async ({page}) => {
 =======
 test.only("Home Page Title", async ({page}) => {
 >>>>>>> 922fa11 (update all scenarios)
+=======
+test.skip("Home Page Title", async ({page}) => {
+>>>>>>> c666585 (update with suresh changes)
        
        /// AAA
        //const homePage: homepage_actions = new heroku_home_page(page);
@@ -51,6 +59,9 @@ test.skip("44 Examples on Home Page Check", async ({page})=>{
 });
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c666585 (update with suresh changes)
 test.skip("Adding new elements work", async ({page})=>{
     const expected = 1; // Arrange
     const appPage = (await homePage.goToExample(HerokuAppPages.add_remove)) as add_remove_actions;
@@ -80,6 +91,7 @@ test("Check Removing items work",()=>{
     //homePage.goToExample(HerokuAppPages.context_menu) as context_page_action
 });
 
+<<<<<<< HEAD
 test("Check drop down operation", ()=>{
     await page.getByRole('link', { name: 'Completed' }).click();
 
@@ -89,3 +101,7 @@ test("Check drop down operation", ()=>{
 
 =======
 >>>>>>> 922fa11 (update all scenarios)
+=======
+
+
+>>>>>>> c666585 (update with suresh changes)

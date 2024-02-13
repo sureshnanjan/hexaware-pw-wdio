@@ -2,7 +2,6 @@
  * 
  */
 export interface add_remove_actions{
-<<<<<<< HEAD
     addElement: () => Promise<void>;
     getAddedElements: () => Promise<string[]>;
     /**
@@ -12,8 +11,4 @@ export interface add_remove_actions{
      */
     removeElement: (position?: number) => Promise<void>; 
     
-=======
-    addElement: () => void;
-    getAddedElements: () => number;
->>>>>>> 922fa11 (update all scenarios)
 }

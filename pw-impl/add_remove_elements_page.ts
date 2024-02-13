@@ -40,9 +40,12 @@ export class AddRemoveElements implements add_remove_actions{
         return examples;
         
     };
+<<<<<<< HEAD
 
     async selectDropdown(){
 
     };
     
+=======
+>>>>>>> c666585 (update with suresh changes)
 }
