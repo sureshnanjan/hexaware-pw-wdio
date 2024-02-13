@@ -17,7 +17,7 @@ test.beforeEach(async ({ page }, testInfo) => {
     homePage = new heroku_home_page(page);
   });
 
-test.skip("Home Page Title", async ({page}) => {
+test.only("Home Page Title", async ({page}) => {
        
        /// AAA
        //const homePage: homepage_actions = new heroku_home_page(page);
@@ -36,7 +36,7 @@ test.skip("Home Page Subtitle check",async ({page})=>{
        expect(actual).toEqual(expected);
 });
 
-test.only("44 Examples on Home Page Check", async ({page})=>{
+test.skip("44 Examples on Home Page Check", async ({page})=>{
     const expected = 44;
     const actual = (await homePage.getExamples()).length;
     expect(actual).toEqual(expected);
