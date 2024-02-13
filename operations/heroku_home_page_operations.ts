@@ -1,3 +1,4 @@
+import { HerokuAppType, HerokuAppPages } from "./heroku_app_type";
 /**
  * This interface caoture all operation srelated to the Heroku Home Page
  */
@@ -19,7 +20,7 @@ export interface homepage_actions {
     getBanner: () => Promise<string>;
     /** */
 
-    goToExample: (name:string) => Promise<void>;
+    goToExample: (name:HerokuAppPages) => Promise<HerokuAppType>;
 
     // 1 + 2
     //sureeiuiuoiTest

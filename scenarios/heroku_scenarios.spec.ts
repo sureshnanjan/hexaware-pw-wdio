@@ -2,6 +2,7 @@ import { homepage_actions } from "../operations/heroku_home_page_operations";
 import { add_remove_actions } from "../operations/add_remove-operations";
 import { heroku_home_page } from "../pw-impl/heroku_home_page";
 import { test, expect } from '@playwright/test';
+import { HerokuAppPages } from "../operations/heroku_app_type";
 
 function getLanguageString()
 {
@@ -17,7 +18,7 @@ test.beforeEach(async ({ page }, testInfo) => {
     homePage = new heroku_home_page(page);
   });
 
-test.only("Home Page Title", async ({page}) => {
+test.skip("Home Page Title", async ({page}) => {
        
        /// AAA
        //const homePage: homepage_actions = new heroku_home_page(page);
@@ -41,4 +42,35 @@ test.skip("44 Examples on Home Page Check", async ({page})=>{
     const actual = (await homePage.getExamples()).length;
     expect(actual).toEqual(expected);
 });
+
+test.skip("Adding new elements work", async ({page})=>{
+    const expected = 1; // Arrange
+    const appPage = (await homePage.goToExample(HerokuAppPages.add_remove)) as add_remove_actions;
+    await appPage.addElement(); // Action
+    // Assert
+    const actual = (await appPage.getAddedElements()).length;
+    expect(actual).toEqual(expected);
+});
+
+
+test.only("Removing elements work" , async ({page})=>{
+    /// AAA
+    const expected = 0;
+    const appPage = (await homePage.goToExample(HerokuAppPages.add_remove)) as add_remove_actions
+    await appPage.addElement(); // There will be 1 element in our page
+    // Actions
+    await appPage.removeElement();
+
+    // Assertion
+    const actual = (await appPage.getAddedElements()).length;
+    expect(actual).toEqual(expected);
+});
+
+
+test("Check Removing items work",()=>{
+
+    //homePage.goToExample(HerokuAppPages.context_menu) as context_page_action
+});
+
+
 
