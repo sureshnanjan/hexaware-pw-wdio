@@ -20,7 +20,7 @@ export interface homepage_actions {
     getBanner: () => Promise<string>;
     /** */
 
-    goToExample: (name:HerokuAppPages) => Promise<HerokuAppType>;
+    goToExample: (name:string) => Promise<void>;
 
     // 1 + 2
     //sureeiuiuoiTest

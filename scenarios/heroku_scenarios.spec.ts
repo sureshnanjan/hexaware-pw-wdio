@@ -2,7 +2,10 @@ import { homepage_actions } from "../operations/heroku_home_page_operations";
 import { add_remove_actions } from "../operations/add_remove-operations";
 import { heroku_home_page } from "../pw-impl/heroku_home_page";
 import { test, expect } from '@playwright/test';
+<<<<<<< HEAD
 import { HerokuAppPages } from "../operations/heroku_app_type";
+=======
+>>>>>>> 922fa11 (update all scenarios)
 
 function getLanguageString()
 {
@@ -18,7 +21,11 @@ test.beforeEach(async ({ page }, testInfo) => {
     homePage = new heroku_home_page(page);
   });
 
+<<<<<<< HEAD
 test.skip("Home Page Title", async ({page}) => {
+=======
+test.only("Home Page Title", async ({page}) => {
+>>>>>>> 922fa11 (update all scenarios)
        
        /// AAA
        //const homePage: homepage_actions = new heroku_home_page(page);
@@ -43,6 +50,7 @@ test.skip("44 Examples on Home Page Check", async ({page})=>{
     expect(actual).toEqual(expected);
 });
 
+<<<<<<< HEAD
 test.skip("Adding new elements work", async ({page})=>{
     const expected = 1; // Arrange
     const appPage = (await homePage.goToExample(HerokuAppPages.add_remove)) as add_remove_actions;
@@ -79,3 +87,5 @@ test("Check drop down operation", ()=>{
 
 
 
+=======
+>>>>>>> 922fa11 (update all scenarios)
