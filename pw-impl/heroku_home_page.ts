@@ -30,6 +30,7 @@ export class heroku_home_page implements homepage_actions {
         // Execution context was destroyed, most likely because of a navigation
         await this.page.waitForURL(this.url);
     }
+
     async goToExample(name: HerokuAppPages){
         console.log(name)
         await this.page.getByRole("link").and(this.page.getByText(name)).click();

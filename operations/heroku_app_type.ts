@@ -8,5 +8,6 @@ export enum HerokuAppPages {
     ab_testing = "A/B Testing",
     basic_auth = "Basic Auth",
     broken_images = "Broken Images",
-    context_menu = "Context Menu"
+    context_menu = "Context Menu",
+    selectDropdown = "Dropdown"
   }
