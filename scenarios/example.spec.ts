@@ -54,7 +54,7 @@ test("Frok Me updates status report database", async () =>{
 
 
 });
-test("Frok Me navigates to github repo", async () =>{
+test("Checking WDIO integration", async () =>{
   
 // launch the Home Page
   // Click on Form me

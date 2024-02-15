@@ -2,14 +2,7 @@ import { homepage_actions } from "../operations/heroku_home_page_operations";
 import { add_remove_actions } from "../operations/add_remove-operations";
 import { heroku_home_page } from "../pw-impl/heroku_home_page";
 import { test, expect } from '@playwright/test';
-<<<<<<< HEAD
-<<<<<<< HEAD
 import { HerokuAppPages } from "../operations/heroku_app_type";
-=======
->>>>>>> 922fa11 (update all scenarios)
-=======
-import { HerokuAppPages } from "../operations/heroku_app_type";
->>>>>>> c666585 (update with suresh changes)
 
 function getLanguageString()
 {
@@ -25,15 +18,8 @@ test.beforeEach(async ({ page }, testInfo) => {
     homePage = new heroku_home_page(page);
   });
 
-<<<<<<< HEAD
-<<<<<<< HEAD
+  
 test.skip("Home Page Title", async ({page}) => {
-=======
-test.only("Home Page Title", async ({page}) => {
->>>>>>> 922fa11 (update all scenarios)
-=======
-test.skip("Home Page Title", async ({page}) => {
->>>>>>> c666585 (update with suresh changes)
        
        /// AAA
        //const homePage: homepage_actions = new heroku_home_page(page);
@@ -58,10 +44,6 @@ test.skip("44 Examples on Home Page Check", async ({page})=>{
     expect(actual).toEqual(expected);
 });
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> c666585 (update with suresh changes)
 test.skip("Adding new elements work", async ({page})=>{
     const expected = 1; // Arrange
     const appPage = (await homePage.goToExample(HerokuAppPages.add_remove)) as add_remove_actions;
@@ -86,22 +68,22 @@ test.only("Removing elements work" , async ({page})=>{
 });
 
 
-test("Check Removing items work",()=>{
+test("Checkout fish items works",({page})=>{
+
+    // Petstore 
+    // PetStore.Login(uname, pwd) // UI Flow
+
+    page.request.post("https://petstore.octoperf.com/login",{data:{username:"test", pasword:"pass"}})
+    page.request.get("https://petstore.swagger.io/v2/user/login",{params:{username:"somethi",password:"pass"}})
+    
+
+
+
+
+    
 
     //homePage.goToExample(HerokuAppPages.context_menu) as context_page_action
 });
 
-<<<<<<< HEAD
-test("Check drop down operation", ()=>{
-    await page.getByRole('link', { name: 'Completed' }).click();
-
-});
 
 
-
-=======
->>>>>>> 922fa11 (update all scenarios)
-=======
-
-
->>>>>>> c666585 (update with suresh changes)
