@@ -85,5 +85,10 @@ test("Checkout fish items works",({page})=>{
     //homePage.goToExample(HerokuAppPages.context_menu) as context_page_action
 });
 
+test("Check drop down operation", ()=>{
+    await page.getByRole('link', { name: 'Completed' }).click();
+
+});
+
 
 
