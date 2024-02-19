@@ -9,7 +9,7 @@ const { remote } = require('webdriverio');
         }
     });
 
-    await browser.url('http://webdriver.io');
+    await browser.url('https://the-internet.herokuapp.com/');
 
     const title = await browser.getTitle();
     console.log('Title was: ' + title);
