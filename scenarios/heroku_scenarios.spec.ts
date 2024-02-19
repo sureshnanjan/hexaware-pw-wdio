@@ -18,6 +18,7 @@ test.beforeEach(async ({ page }, testInfo) => {
     homePage = new heroku_home_page(page);
   });
 
+  
 test.skip("Home Page Title", async ({page}) => {
        
        /// AAA
@@ -67,7 +68,19 @@ test.only("Removing elements work" , async ({page})=>{
 });
 
 
-test("Check Removing items work",()=>{
+test("Checkout fish items works",({page})=>{
+
+    // Petstore 
+    // PetStore.Login(uname, pwd) // UI Flow
+
+    page.request.post("https://petstore.octoperf.com/login",{data:{username:"test", pasword:"pass"}})
+    page.request.get("https://petstore.swagger.io/v2/user/login",{params:{username:"somethi",password:"pass"}})
+    
+
+
+
+
+    
 
     //homePage.goToExample(HerokuAppPages.context_menu) as context_page_action
 });
