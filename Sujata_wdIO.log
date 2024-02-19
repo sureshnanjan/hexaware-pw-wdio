@@ -1,0 +1,54 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20240219122812
+Username: CORP\2000094282
+RunAs User: CORP\2000094282
+Configuration Name: 
+Machine: LTBG-5CD1184D1V (Microsoft Windows NT 10.0.19044.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -noexit -command try { . "c:\Users\2000094282\AppData\Local\Programs\Microsoft VS Code\resources\app\out\vs\workbench\contrib\terminal\browser\media\shellIntegration.ps1" } catch {}
+Process ID: 14784
+PSVersion: 5.1.19041.3930
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.3930
+BuildVersion: 10.0.19041.3930
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is Sujata_wdIO.log
+PS C:\Users\2000094282\Desktop\Training\hexaware-pw-wdio> node .\scenarios\test-wdio.ts
+    at Object.<anonymous> (C:\Users\2000094282\Desktop\Training\hexaware-pw-wdio\scenarios\test-wdio.ts:1:20)
+    at Module._compile (node:internal/modules/cjs/loader:1241:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+    at Module._load (node:internal/modules/cjs/loader:938:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:83:12) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Users\\2000094282\\Desktop\\Training\\hexaware-pw-wdio\\scenarios\\test-wdio.ts'
+  ]
+}
+
+Node.js v20.9.0
+PS C:\Users\2000094282\Desktop\Training\hexaware-pw-wdio> npm install
+
+PS C:\Users\2000094282\Desktop\Training\hexaware-pw-wdio> node .\scenarios\test-wdio.ts
+    at Object.spawn (node:child_process:761:9)
+    at start (file:///C:/Users/2000094282/Desktop/Training/hexaware-pw-wdio/node_modules/geckodriver/dist/index.js:24:15)
+    at async startWebDriver (file:///C:/Users/2000094282/Desktop/Training/hexaware-pw-wdio/node_modules/@wdio/utils/build/node/startWebDriver.js:9
+2:25)
+    at async WebDriver.newSession (file:///C:/Users/2000094282/Desktop/Training/hexaware-pw-wdio/node_modules/webdriver/build/index.js:18:31)
+    at async remote (file:///C:/Users/2000094282/Desktop/Training/hexaware-pw-wdio/node_modules/webdriverio/build/index.js:45:22)
+    at async C:\Users\2000094282\Desktop\Training\hexaware-pw-wdio\scenarios\test-wdio.ts:4:21 {
+  errno: -4082,
+  code: 'EBUSY',
+  syscall: 'spawn'
+}
+PS C:\Users\2000094282\Desktop\Training\hexaware-pw-wdio> node .\scenarios\test-wdio.ts
+
+PS C:\Users\2000094282\Desktop\Training\hexaware-pw-wdio> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20240219123621
+**********************
