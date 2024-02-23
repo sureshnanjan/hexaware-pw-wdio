@@ -19,7 +19,7 @@ test.beforeEach(async ({ page }, testInfo) => {
   });
 
   
-test.skip("Home Page Title", async ({page}) => {
+test("Home Page Title", async ({page}) => {
        
        /// AAA
        //const homePage: homepage_actions = new heroku_home_page(page);
@@ -30,7 +30,7 @@ test.skip("Home Page Title", async ({page}) => {
 
 });
 
-test.skip("Home Page Subtitle check",async ({page})=>{
+test("Home Page Subtitle check",async ({page})=>{
     //const homePage: homepage_actions = new heroku_home_page(page);
        //const homePage: homepage_actions = new android_home_page();
        const expected = "Available Examples";
@@ -38,13 +38,13 @@ test.skip("Home Page Subtitle check",async ({page})=>{
        expect(actual).toEqual(expected);
 });
 
-test.skip("44 Examples on Home Page Check", async ({page})=>{
+test("44 Examples on Home Page Check", async ({page})=>{
     const expected = 44;
     const actual = (await homePage.getExamples()).length;
     expect(actual).toEqual(expected);
 });
 
-test.skip("Adding new elements work", async ({page})=>{
+test("Adding new elements work", async ({page})=>{
     const expected = 1; // Arrange
     const appPage = (await homePage.goToExample(HerokuAppPages.add_remove)) as add_remove_actions;
     await appPage.addElement(); // Action
@@ -54,7 +54,7 @@ test.skip("Adding new elements work", async ({page})=>{
 });
 
 
-test.only("Removing elements work" , async ({page})=>{
+test("Removing elements work" , async ({page})=>{
     /// AAA
     const expected = 0;
     const appPage = (await homePage.goToExample(HerokuAppPages.add_remove)) as add_remove_actions
