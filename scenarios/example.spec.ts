@@ -61,7 +61,7 @@ test("Checking WDIO integration", async () =>{
 
 });
 
-test.only('Visual Validation with Paywright', async ({ page }) => {
+test('Visual Validation with Paywright', async ({ page }) => {
   await page.goto('https://playwright.dev');
   await expect(page).toHaveScreenshot();
 });
