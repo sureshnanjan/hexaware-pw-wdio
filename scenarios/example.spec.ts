@@ -3,7 +3,7 @@ import { BrowserstackHomePage } from '../pw-impl/homepage';
 
 
 test('has title', async ({ page }) => {
-  await page.goto('https://playwright.dev/');
+  await page.goto('/');
 
   // Expect a title "to contain" a substring.
   await expect(page).toHaveTitle(/Playwright/);
@@ -59,6 +59,11 @@ test("Checking WDIO integration", async () =>{
 // launch the Home Page
   // Click on Form me
 
+});
+
+test.only('Visual Validation with Paywright', async ({ page }) => {
+  await page.goto('https://playwright.dev');
+  await expect(page).toHaveScreenshot();
 });
 
 

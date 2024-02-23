@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {},
   "keywords": [],
   "author": "",
@@ -10,6 +11,17 @@
   "devDependencies": {
     "@playwright/test": "^1.41.2",
     "@types/node": "^20.11.16",
+    "@types/webdriverio": "^5.0.0",
+    "@wdio/cli": "^8.32.3",
+    "@wdio/local-runner": "^8.32.3",
+    "@wdio/mocha-framework": "^8.32.3",
+    "@wdio/spec-reporter": "^8.32.2",
+    "@wdio/types": "^8.32.2",
+    "@wdio/visual-service": "^3.0.2",
     "webdriverio": "^8.32.1"
+  },
+  "dependencies": {
+    "allure-playwright": "^2.12.2",
+    "typescript": "^5.3.3"
   }
 }
